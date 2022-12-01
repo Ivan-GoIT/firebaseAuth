@@ -5,9 +5,9 @@ import debounce from 'lodash.debounce';
 const form = document.forms['authorization-form'];
 
 const onSubmit = (e) => {
-  
+
   e.preventDefault();
-  console.log('Submit');
+  console.log(form.nickname);
 }
 
 form.addEventListener('submit',onSubmit)
